@@ -20,8 +20,9 @@
 
 Define the the React components and the architectural design of your app. -->
 
-https://i.imgur.com/9B9LvCJ.jpg
-[Imgur](https://i.imgur.com/9B9LvCJ.jpg)
+
+[WireFrame1](https://i.imgur.com/9B9LvCJ.jpg)
+[WireFrame2](https://i.imgur.com/RvUZz9c.jpg)
 
 
 ### MVP/PostMVP - 5min
