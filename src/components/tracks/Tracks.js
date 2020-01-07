@@ -22,6 +22,7 @@ import Track from '../tracks/Track';
                                     <Track key={item.track.track_id} track={item.track}/>
                                 ))}
                             </div>
+                            
                             </React.Fragment>
                         );
                     }

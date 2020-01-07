@@ -59,7 +59,7 @@ state = {
                         </li>
 
                     </ul>
-                    <Link to="/" className="btn btn-dark btn-sm mb-4"> Spin again </Link>
+                    <Link to="/" className="btn btn-dark btn-sm mb-4 btn-block"> Spin again </Link>
                 </React.Fragment>
                 );
         }

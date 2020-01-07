@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    /* background-image: "https://i.imgur.com/FlfVwS6.jpg"; */
+    background-attachment: fixed;
+}
+
+.btn {
+    border-radius: 0;
+    font-family: montserrat;
+    background-color: black;
+    padding: 10px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 900;
+    border: none;
+}
+
+.navbar {
+    font-family: montserrat;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    font-size: 34px;
+    font-weight: bolder;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0px 0px 80px;
+}
+
+.form-control {
+    font-family: montserrat;
+    font-style: italic;
+    border-radius: 0;
+    border: none;
+    background-color: white;
+    text-align: center;
+}
+.card {
+    border-radius: 0;
+    background-color: rgba(245, 245, 245);
+    opacity: .9;
+}
+
+.card.card-body {
+    font-family: montserrat;
+    border: none;
+    background-color: rgba(245, 245, 245, 0);
+    opacity: 1;
+    border-radius: 0;
+}
+.card-body {
+    font-family: montserrat;
+    border: none;
+    background-color: rgba(245, 245, 245, 0);
+    opacity: 1;
+    border-radius: 0;
+}
+
+h3 {
+    font-family: montserrat;
+    color: white;
+    font-weight: 900;
+    font-variant: small-caps;
+    letter-spacing: 5px;
+    background-color: black;
+}
+
+strong {
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: none;
+    border-radius: 0;
+}
+
+h5.card-header {
+    font-family: montserrat;
+    text-transform: uppercase;
+}
+
+span.text-secondary {
+    text-transform: none;
+}
+
+li {
+    font-family: montserrat;
+}
