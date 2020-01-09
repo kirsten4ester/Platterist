@@ -24,7 +24,7 @@ body {
     font-weight: bolder;
     color: white;
     font-weight: 900;
-    margin: 10px 0px 0px 115px;
+    margin: 10px 0px 30px 115px;
 }
 
 
@@ -94,5 +94,15 @@ li {
         margin-left: 80%;
         width: 180px;
         background-color: black;
+    }
+
+    .btn {
+        width: 300px;
+        margin: auto;
+    }
+
+    .form-control {
+        width: 600px;
+        margin: auto;
     }
 }
