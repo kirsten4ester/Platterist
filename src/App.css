@@ -47,6 +47,7 @@ body {
     background-color: rgba(245, 245, 245, 0);
     opacity: 1;
     border-radius: 0;
+    margin-bottom: 40px;
 }
 .card-body {
     font-family: montserrat;
