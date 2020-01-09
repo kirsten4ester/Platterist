@@ -14,7 +14,7 @@ findTrack = (dispatch, e) => {
     axios.get( `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=${this.state.trackTitle}&page_size=3&page=1&s_track_rating=desc&apikey=${
             process.env.REACT_APP_MM_KEY}`) 
         .then(res => {
-            console.log(res.data);
+            // console.log(res.data);
             dispatch({
                 type: 'SEARCH_TRACKS',
                 payload: res.data.message.body.track_list

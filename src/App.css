@@ -20,12 +20,13 @@ body {
     font-family: montserrat;
     text-transform: uppercase;
     letter-spacing: 15px;
-    font-size: 34px;
+    font-size: 38px;
     font-weight: bolder;
     color: white;
-    font-weight: bold;
-    margin: 10px 0px 0px 80px;
+    font-weight: 900;
+    margin: 10px 0px 0px 115px;
 }
+
 
 .form-control {
     font-family: montserrat;
@@ -47,7 +48,6 @@ body {
     background-color: rgba(245, 245, 245, 0);
     opacity: 1;
     border-radius: 0;
-    margin-bottom: 40px;
 }
 .card-body {
     font-family: montserrat;
@@ -86,4 +86,13 @@ span.text-secondary {
 
 li {
     font-family: montserrat;
+}
+
+@media screen and (min-width: 415px) {
+    span.navbar {
+        background:black;
+        margin-left: 80%;
+        width: 180px;
+        background-color: black;
+    }
 }

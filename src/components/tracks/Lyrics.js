@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Spinner from '../layout/Spinner';
-// import Moment from 'react-moment';
+import Moment from 'react-moment';
 
 class Lyrics extends Component {
 state = {
     track: {},
-    lyrics: {}
+    lyrics: {},
+    date: {}
  };
 
  componentDidMount() {
@@ -25,17 +26,31 @@ state = {
     .then ( res => {
         console.log(res.data);
         this.setState({ track: res.data.message.body.track });
+
+
+// experimenting with album year: 
+
+    return axios.get( 
+        `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?f_track_release_group_first_release_date_min=${this.props.match.params.id}&apikey=${
+        process.env.REACT_APP_MM_KEY}`
+        );
+    })
+    .then ( res => {
+        console.log(res.data);
+        this.setState({ date: res.data.message.body.track_list });
     })
     .catch(err => console.log(err));
  }
 
     render() {
-        const { track, lyrics } = this.state;
+        const { track, lyrics, date } = this.state;
         if(
             track === undefined || 
             lyrics === undefined || 
+            date === undefined ||
             Object.keys(track).length === 0 || 
-            Object.keys(lyrics).length === 0
+            Object.keys(lyrics).length === 0 ||
+            Object.keys(date).length === 0
             ){
                 return <Spinner />
         } else {
@@ -53,10 +68,11 @@ state = {
                         <li className="list-group-item"> 
                         <strong>Album</strong>: {track.album_name}
                         </li>
-{/* 
+
                         <li className="list-group-item"> 
-                        <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment>
-                        </li> */}
+                        <Moment format="MM/DD/YYYY">{date.f_track_release_group_first_release_date_min}</Moment>
+                        {/* {date.f_track_release_group_first_release_date_min} */} 
+                        </li> 
 
                     </ul>
                     <Link to="/" className="btn btn-dark btn-sm mb-4 btn-block"> Spin again </Link>
