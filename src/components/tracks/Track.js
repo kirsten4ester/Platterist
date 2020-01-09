@@ -16,7 +16,7 @@ const Track = (props) => {
                     <p className="card-text">
                         <strong>Album</strong>: {track.album_name}
                         <br/>
-                        <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment>
+                        {/* <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment> */}
                         <br/>
                     </p>
                     {/* button for lyrics: */}

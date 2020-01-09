@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Spinner from '../layout/Spinner';
-import Moment from 'react-moment';
+// import Moment from 'react-moment';
 
 class Lyrics extends Component {
 state = {
@@ -23,6 +23,7 @@ state = {
         );
     })
     .then ( res => {
+        console.log(res.data);
         this.setState({ track: res.data.message.body.track });
     })
     .catch(err => console.log(err));
@@ -40,7 +41,6 @@ state = {
         } else {
             return (
                 <React.Fragment>
-                    {/* <Link to="/" className="btn btn-dark btn-sm mb-4"> Spin again </Link> */}
                     <div className="card">
                         <h5 className="card-header">
                             {track.track_name} <span className="text-secondary">{track.artist_name}</span>
@@ -53,14 +53,14 @@ state = {
                         <li className="list-group-item"> 
                         <strong>Album</strong>: {track.album_name}
                         </li>
-
+{/* 
                         <li className="list-group-item"> 
                         <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment>
-                        </li>
+                        </li> */}
 
                     </ul>
                     <Link to="/" className="btn btn-dark btn-sm mb-4 btn-block"> Spin again </Link>
-                </React.Fragment>
+                </React.Fragment> 
                 );
         }
     }
