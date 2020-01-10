@@ -1,7 +1,7 @@
 body {
     background-color: black;
     background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center top;
 }
 
@@ -15,6 +15,7 @@ body {
     letter-spacing: 10px;
     font-weight: 900;
     border: none;
+    margin: auto;
 }
 
 .navbar {
@@ -35,12 +36,14 @@ body {
     border: none;
     background-color: white;
     text-align: center;
+    margin: auto;
 }
 
 .card {
     border-radius: 0;
     background-color: rgba(245, 245, 245);
     opacity: .9;
+    margin: auto;
 }
 
 .card.card-body {
@@ -74,6 +77,7 @@ strong {
 .container {
     background-color: none;
     border-radius: 0;
+    margin: auto;
 }
 
 h5.card-header {
