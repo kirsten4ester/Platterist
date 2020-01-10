@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-// import Moment from 'react-moment';
 
 const Track = (props) => {
     const { track } = props;
@@ -16,17 +15,13 @@ const Track = (props) => {
                     <p className="card-text">
                         <strong>Album</strong>: {track.album_name}
                         <br/>
-                        {/* <Moment format="MM/DD/YYYY">{track.first_release_date}</Moment> */}
                         <br/>
                     </p>
-                    {/* button for lyrics: */}
                     <Link to={`lyrics/track/${track.track_id}`} className="btn btn-secondary btn-xs btn-block">
                         Lyrics
                     </Link>
-                    
                 </div> 
             </div>
-            
         </div>
         </>
     )

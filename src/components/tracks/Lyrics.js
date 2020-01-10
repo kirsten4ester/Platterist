@@ -22,18 +22,10 @@ state = {
         );
     })
     .then ( res => {
-        console.log(res.data);
         this.setState({ track: res.data.message.body.track });
-
-    return axios.get( 
-        `https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?f_track_release_group_first_release_date_min=${this.props.match.params.id}&apikey=${
-        process.env.REACT_APP_MM_KEY}`
-        );
-
     })
     .catch(err => console.log(err));
  }
-
     render() {
         const { track, lyrics } = this.state;
         if(
@@ -45,7 +37,7 @@ state = {
                 return <Spinner />
         } else {
             return (
-                <React.Fragment>
+                <>
                     <div className="card">
                         <h5 className="card-header">
                             {track.track_name} <span className="text-secondary">{track.artist_name}</span>
@@ -59,8 +51,8 @@ state = {
                         <strong>Album</strong>: {track.album_name}
                         </li>
                     </ul>
-                    <Link to="/" className="btn btn-dark btn-sm mb-4 btn-block"> Spin again </Link>
-                </React.Fragment> 
+                    <Link to="/" className="btn btn-dark btn-sm mt-4 mb-4 btn-block"> Spin again </Link>
+                </> 
                 );
         }
     }

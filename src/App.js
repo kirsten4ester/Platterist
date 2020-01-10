@@ -13,7 +13,7 @@ function App() {
   return (
     <Provider>
     <Router>
-      <React.Fragment>
+      <>
         <Navbar/>
         <div className="container">
           <Switch>
@@ -21,7 +21,7 @@ function App() {
             <Route exact path= "/lyrics/track/:id" component= { Lyrics } />
           </Switch>
         </div>
-      </React.Fragment>
+      </>
     </Router>
     </Provider>
   );

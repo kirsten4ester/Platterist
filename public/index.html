@@ -2,8 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <!-- COMMENTING OUT -- 404 ERROR:
-      <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
 
@@ -16,27 +14,30 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <!-- COMMENTING OUT -- 404 ERROR: -->
-      <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
-   
-    <!-- <link rel="manifest" href="%PUBLIC_URL%/manifest.json" /> -->
-  
+
     <title>Platterist</title>
+
   </head>
-  <!-- large thumbnail: GOOD(1.9 15:20) -->
-  <!-- <body background="https://i.imgur.com/FlfVwS6l.jpg?1"> -->
-
-    <!-- playing -- original thumbnail: -->
+ 
+    <!--imgur: original: -->
     <body background="https://i.imgur.com/FlfVwS6.jpg?2">
-
-
-
-
-    <!-- medium thumbnail: (too tiled) -->
-  <!-- <body background="https://i.imgur.com/FlfVwS6m.jpg"> -->
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+    <style>
+      @media only screen and (min-width: 415px) {
+        body {
+          /* imgur: original" */
+          background-image: url(https://i.imgur.com/jetKUvo.jpg);
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-attachment: fixed;
+          background-size: cover;
+          }
+    }
+    </style>
     
   </body>
+
 </html>

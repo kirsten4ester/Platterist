@@ -1,7 +1,8 @@
 body {
     background-color: black;
-    /* background-image: "https://i.imgur.com/FlfVwS6.jpg"; */
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
 
 .btn {
@@ -27,7 +28,6 @@ body {
     margin: 10px 0px 30px 115px;
 }
 
-
 .form-control {
     font-family: montserrat;
     font-style: italic;
@@ -36,6 +36,7 @@ body {
     background-color: white;
     text-align: center;
 }
+
 .card {
     border-radius: 0;
     background-color: rgba(245, 245, 245);
@@ -89,9 +90,15 @@ li {
 }
 
 @media screen and (min-width: 415px) {
+    
+    body {
+        background-attachment: fixed;
+        background-repeat: repeat;
+    }
+    
     span.navbar {
         background:black;
-        margin-left: 80%;
+        margin-left: 75%;
         width: 180px;
         background-color: black;
     }
